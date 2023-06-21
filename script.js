@@ -20,17 +20,6 @@ var teamPresentationPageCheckbox = document.getElementById(
 var companyHistoryPresentationPageCheckbox = document.getElementById(
   "company-history-presentation-page"
 );
-var additionalAboutUsPage = document.getElementById("additional-about-us-page");
-var additionalCompanyNewsPage = document.getElementById(
-  "additional-company-news-page"
-);
-var additionalPressPage = document.getElementById("additional-press-page");
-var additionalDirectSalePage = document.getElementById(
-  "additional-direct-sale-page"
-);
-var additionalAdsSpecialPage = document.getElementById(
-  "additional-advertising-special-page"
-);
 var additionalfedOptPage = document.getElementById(
   "additional-feedback-option-page"
 );
@@ -61,25 +50,6 @@ var additionalDownloadsPage = document.getElementById(
 var noDesignSystem = document.getElementById("have-design-system-no");
 var yesDesignSystem = document.getElementById("have-design-system-yes");
 var totalAmount = document.getElementById("total-amount");
-var fivePageSiteCheckbox = document.getElementById("five-page-site-info");
-var tenPageSiteCheckbox = document.getElementById("ten-page-site-info");
-var twentyPageSiteCheckbox = document.getElementById("twenty-page-site-info");
-var oneAdditionalPageCheckbox = document.getElementById("one-additional-page");
-var threeAdditionalPageCheckbox = document.getElementById(
-  "three-additional-page"
-);
-var fiveAdditionalPageCheckbox = document.getElementById(
-  "five-additional-page"
-);
-var aboutUsPresentationPageCheckbox = document.getElementById(
-  "about-us-presentation-page"
-);
-var teamPresentationPageCheckbox = document.getElementById(
-  "team-presentation-page"
-);
-var companyHistoryPresentationPageCheckbox = document.getElementById(
-  "company-history-presentation-page"
-);
 var additionalAboutUsPage = document.getElementById("additional-about-us-page");
 var additionalCompanyNewsPage = document.getElementById(
   "additional-company-news-page"
@@ -90,33 +60,6 @@ var additionalDirectSalePage = document.getElementById(
 );
 var additionalAdsSpecialPage = document.getElementById(
   "additional-advertising-special-page"
-);
-var additionalfedOptPage = document.getElementById(
-  "additional-feedback-option-page"
-);
-var additionalCreationNewsletter = document.getElementById(
-  "additional-creation-newsletter"
-);
-var additionalDiscussionForum = document.getElementById(
-  "additional-discussion-forum"
-);
-var additionalOneOnlineGame = document.getElementById(
-  "additional-one-online-game"
-);
-var additionalChatFunction = document.getElementById(
-  "additional-chat-function"
-);
-var additionalInteractionWeb2 = document.getElementById(
-  "additional-interaction-web2"
-);
-var additionalOfferFacebook = document.getElementById(
-  "additional-offer-facebook"
-);
-var additionalFAQ = document.getElementById("additional-faq");
-var additionalCaseStudies = document.getElementById("additional-case-studies");
-var additionalTutorials = document.getElementById("additional-tutorials");
-var additionalDownloadsPage = document.getElementById(
-  "additional-downloads-page"
 );
 var oneAdditionalLanguage = document.getElementById("one-additional-language");
 var twoAdditionalLanguage = document.getElementById("two-additional-language");
@@ -511,10 +454,6 @@ function updateTotalAmount() {
     amount += 500;
   }
 
-  if (additionalMultilingualism.checked) {
-    amount += 500;
-  }
-
   if (yesDesignSystem.checked) {
     amount += 0;
   }
@@ -645,114 +584,6 @@ function updateTotalAmount() {
 
   if (fiveAdditionalLanguage.checked) {
     amount += 2500;
-  }
-
-  if (subscriptionRadio.checked || freeRadio.checked) {
-    amount = 500;
-  }
-
-  if (threePageSiteCheckbox.checked) {
-    amount += 600;
-  }
-
-  if (fivePageSiteCheckbox.checked) {
-    amount += 1000;
-  }
-
-  if (tenPageSiteCheckbox.checked) {
-    amount += 2000;
-  }
-
-  if (twentyPageSiteCheckbox.checked) {
-    amount += 4000;
-  }
-
-  if (oneAdditionalPageCheckbox.checked) {
-    amount += 200;
-  }
-
-  if (threeAdditionalPageCheckbox.checked) {
-    amount += 600;
-  }
-
-  if (fiveAdditionalPageCheckbox.checked) {
-    amount += 1000;
-  }
-
-  if (aboutUsPresentationPageCheckbox.checked) {
-    amount += 500;
-  }
-
-  if (teamPresentationPageCheckbox.checked) {
-    amount += 500;
-  }
-
-  if (companyHistoryPresentationPageCheckbox.checked) {
-    amount += 1000;
-  }
-
-  if (additionalAboutUsPage.checked) {
-    amount += 500;
-  }
-
-  if (additionalCompanyNewsPage.checked) {
-    amount += 500;
-  }
-
-  if (additionalPressPage.checked) {
-    amount += 500;
-  }
-
-  if (additionalDirectSalePage.checked) {
-    amount += 3500;
-  }
-
-  if (additionalAdsSpecialPage.checked) {
-    amount += 400;
-  }
-
-  if (additionalfedOptPage.checked) {
-    amount += 300;
-  }
-
-  if (additionalCreationNewsletter.checked) {
-    amount += 100;
-  }
-
-  if (additionalDiscussionForum.checked) {
-    amount += 600;
-  }
-
-  if (additionalOneOnlineGame.checked) {
-    amount += 600;
-  }
-
-  if (additionalChatFunction.checked) {
-    amount += 300;
-  }
-
-  if (additionalInteractionWeb2.checked) {
-    amount += 1000;
-  }
-
-  if (additionalOfferFacebook.checked) {
-    amount += 600;
-  }
-
-  if (additionalFAQ.checked) {
-    amount += 300;
-  }
-
-  if (additionalCaseStudies.checked) {
-    amount += 500;
-  }
-
-  if (additionalTutorials.checked) {
-    amount += 500;
-  }
-
-  if (additionalDownloadsPage.checked) {
-    amount += 500;
   }
 
   totalAmount.textContent = amount;
